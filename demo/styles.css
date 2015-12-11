@@ -1,0 +1,619 @@
+*{
+	/* Resetting the default styles of the page */
+	margin:0;
+	padding:0;
+}
+
+html{
+	overflow:auto;
+}
+
+body{
+	/* Setting default text color, background and a font stack */
+	font-size:0.825em;
+	color:#eee;
+	background:url("img/bg.png") repeat-x #222222;
+	font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+	/* The form heading */
+	font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+	font-size:60px;
+	font-weight:normal;
+	padding:0 0 30px 10px;
+	text-align:left;
+}
+
+
+
+table#t01 th {
+    color: white;
+    background-color: black;
+   	font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	/*padding:0 0 30px 10px;*/
+	padding:0 15px 0 15px;
+	text-align:left;
+	  /*padding: 10px 18px;*/
+  border-bottom: 1px solid #111;
+}
+
+table#t01 td {
+    color: white;
+    background-color: #373737;
+   	font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+	font-size:15px;
+	font-weight:normal;
+	text-align:left;
+	padding: 10px 18px;
+  	border-bottom: 1px solid #111;
+}
+
+table#t01 tr {
+    color: white;
+    background-color: #373737;
+   	font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+	font-size:15px;
+	font-weight:normal;
+	padding:0 15px 0 15px;
+	text-align:left;
+	  /*padding: 10px 18px;*/
+  border-bottom: 1px solid #111;
+}
+
+table#t01 tbody td:hover{
+  background-color: #000000;
+}
+
+#carbonForm{
+	/* The main form container */
+	background-color:#1C1C1C;
+	border:1px solid #080808;
+	margin:20px auto;
+	padding:20px;
+	width:500px;
+	
+	-moz-box-shadow:0 0 1px #444 inset;
+	-webkit-box-shadow:0 0 1px #444 inset;
+	box-shadow:0 0 1px #444 inset;
+}
+
+#carbonForm1{
+	/* The main form container */
+	background-color:#1C1C1C;
+	border:1px solid #080808;
+	margin:20px auto;
+	padding:20px;
+	width:800px;
+	
+	-moz-box-shadow:0 0 1px #444 inset;
+	-webkit-box-shadow:0 0 1px #444 inset;
+	box-shadow:0 0 1px #444 inset;
+}
+
+#carbonForm h1{
+	/* The form heading */
+	font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+	font-size:60px;
+	font-weight:normal;
+	padding:0 0 30px 10px;
+	text-align:left;
+}
+
+.fieldContainer{
+	/* The light rounded section, which contans the fields */
+	background-color:#1E1E1E;
+	border:1px solid #0E0E0E;
+	padding:30px 10px;
+	
+	/* CSS3 box shadow, used as an inner glow */
+	-moz-box-shadow:0 0 20px #292929 inset;
+	-webkit-box-shadow:0 0 20px #292929 inset;
+	box-shadow:0 0 20px #292929 inset;
+}
+
+.fieldContainer h4{
+	/* The form heading */
+	font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+	font-size:25px;
+	font-weight:normal;
+	padding:0 0 30px 10px;
+	text-align:center;
+}
+
+#carbonForm,.fieldContainer,.errorTip{
+	/* Rounding the divs at once */
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+}
+
+
+.formRow{
+	height:35px;
+	padding:10px;
+	position:relative;
+}
+
+.label{
+	float:left;
+	padding:0 20px 0 0;
+	text-align:right;
+	/*width:70px;*/
+	width:100px;
+}
+
+label{
+	font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+	font-size:11px;
+	letter-spacing:1px;
+	line-height:35px;
+}
+
+.field{
+	float:left;
+}
+
+.field input{
+	/* The text boxes */
+	border:1px solid white;
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:22px;
+	padding:4px 5px;
+	background:url("img/box_bg.png") repeat-x scroll left top #FFFFFF;
+	outline:none; /* Preventing the default Safari and Chrome text box highlight */
+}
+
+.field select{
+	/* The text boxes */
+	border:1px solid white;
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:22px;
+	padding:4px 5px;
+	background:url("img/box_bg.png") repeat-x scroll left top #FFFFFF;
+	outline:none; /* Preventing the default Safari and Chrome text box highlight */
+}
+
+.signupButton{
+	/* The submit button container */
+	text-align:center;
+	padding:30px 0 10px;
+}
+
+.signupButton1{
+	/* The submit button container */
+	text-align:right;
+	padding:30px 0 10px;
+}
+
+.signupButton2{
+	/* The submit button container */
+	text-align:left;
+	padding:30px 0 10px;
+}
+
+#submit{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:110px;
+	
+	background:url("img/submit.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#submit.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+
+#submit:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#update{	
+	/* The update button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:110px;
+	
+	background:url("img/update.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+#update.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+
+#update:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+#delete{	
+	/* The update button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:110px;
+	
+	background:url("img/delete.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+#delete.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+
+#delete:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#createNewEmployee{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/createNewEmployee.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#createNewEmployee.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+
+#createNewEmployee:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#createNewVendor{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/createNewVendor.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#createNewVendor.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+
+#createNewVendor:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#createNewTool{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/createNewTool.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#createNewTool.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+
+#createNewTool:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#createNewComponent{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/createNewComponent.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#createNewComponent.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+
+#createNewComponent:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#createNewOrder{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/createNewOrder.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#createNewOrder.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+#createNewOrder:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+
+#addNewOrderLine{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/addNewOrderLine.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#addNewOrderLine.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+#addNewOrderLine:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#editOrder{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/editOrder.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#editOrder.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+#editOrder:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#createNewUsageOrder{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/createNewUsageOrder.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#createNewUsageOrder.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+#createNewUsageOrder:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#addNewUsageLine{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/addNewUsageLine.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#addNewUsageLine.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+#addNewUsageLine:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#editUsageOrder{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/editUsageOrder.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#editUsageOrder.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+#editUsageOrder:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+#generateReport{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	width:250px;
+	
+	background:url("img/generateReport.png") no-repeat center center #d0ecfd;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#generateReport.active{
+	/* Marking the submit button as active adds the preloader gif as background */
+	background-image:url("img/preloader.gif");
+}
+#generateReport:hover{
+	background-color:#dcf2ff;
+	border:1px solid white;
+}
+
+ul#menu {
+    padding: 0;
+    margin-bottom: 11px;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 4px 4px 0 0;
+    font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+	font-size:30px;
+}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+
+input:hover,
+input:focus{
+	-moz-box-shadow:0 0 8px lightblue;
+	-webkit-box-shadow:0 0 8px lightblue;
+	box-shadow:0 0 8px lightblue;
+}
+
+.errorTip{
+	/* The error divs */
+	background-color:#970F08;
+	color:white;
+	font-size:10px;
+	height:26px;
+	letter-spacing:0.4px;
+	margin-left:20px;
+	padding:5px 0 5px 10px;
+	position:absolute;
+	text-shadow:1px 1px 0 #555555;
+	width:200px;
+	right:-130px;
+}
+
+
+/* The styles below are only necessary for the styling of the demo page: */
+
+#footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding:10px;
+	color:#eee;
+	text-align:center;
+	font-weight:normal;
+	font-style:italic;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
